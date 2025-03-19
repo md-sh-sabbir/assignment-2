@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.welcomeArea {
+    background: #0872B9;
+}
+.welcomeIcon li a {
+    color: #fff;
+}
+.welcomeIcon li a:hover {
+    color: #353535;
+}
+.welcomeCon p{
+    margin-bottom: 0px;
+    margin-left: -18px;
+}
+.navbar{
+    background-color: #FEFEFF;
+    box-shadow: 0 10px 33px rgba(0,0,0,0.1);
+}
+.navbar-brand img {
+    width: 150px;
+    margin-left: -20px;
+}
+.nav-link{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #04101A;
+    margin-left: 20px;
+    transition: .4s;
+}
+.nav-link:hover{
+    color: #0872B9;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f3;
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: 250px;
+    border: 1px solid #f3f3f9bd;
+}
+
+.search-container i {
+    color: #999;
+    margin-right: 8px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sidebar {
+    width: 320px;
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 400px;
+    margin-left: -80px;
+    border-radius: 8px;
+    box-shadow: 0px 12px 28px 10px rgba(140, 149, 159, 0.3);
+    margin-top: 20px;
+}
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+.sidebar a {
+    display: block;
+    color: #4799E1;
+    text-decoration: none;
+    padding: 12px;
+    margin: 5px 0;
+    background: #EBE8FD;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.sidebar i {
+    margin-right: 10px;
+    border-right: 1px solid #aaa4a4;
+    padding-right: 10px;
+}
+
+.sidebar a:hover {
+    background: #04101A;
+    color: #fff;
+}
+.nav_image{
+    width: 160px;
+}
+
+/* Table Area */
+.schedule-container h2 {
+    text-align: center;
+}
+.schedule-container {
+    width: 900px;
+    margin: 20px auto;
+    left: 400px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 18px 24px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 14px;
+    position: absolute;
+}
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.schedule-table th {
+    background-color: skyblue;
+    color: white;
+    font-weight: bold;
+}
+.schedule-table tr:nth-child(even) {
+    background-color: #d6eeee;
+}
+.schedule-table tr:nth-child(even):hover {
+    background-color: #e6f7f7;
+}
+.schedule-table tr:nth-child(odd):hover{
+    background-color: #f0ebeb;
+}
+.schedule-table td {
+    font-size: 12px;
+    font-weight: 600;
+
+}
+.schedule-table td:first-child {
+    font-weight: bold;
+}
+/* Table Area End */
+
+/* ==================================================================================== */
+
+/* Images Content Area */
+.imageCon {
+    border-radius: 10px;
+    height: 130px;
+}
+/* Images Content Area End */
+
+/* ==================================================================================== */
+
+/* Footer Area */
+.footerPart {
+    background: #555;
+    text-align: center;
+    padding: 15px;
+    background-color: #0872B9;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+.footerCon a {
+    color: white;
+    text-decoration: underline;
+}
+.footerCon p{
+    margin-bottom: 0;
+}
+/* Footer Area End */
+
+/* ==================================================================================== */
+
+/* About HTML Part Area */
+.outerHTML {
+    margin: 30px;
+}
+.outerHTML img {
+    height: 400px;
+    width: 800px;
+    border-radius: 12px;
+}
+/* About HTML Part Area End */
+
+/* ==================================================================================== */
+
+@media (max-width: 991px) {
+    .navbar-brand img {
+        width: 120px;
+        margin-left: 0;
+    }
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .sidebar {
+        position: static;
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+    .schedule-container{
+        position: static;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .schedule-table th, .schedule-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) {
+    .welcomeCon p{
+        margin-left: 0;
+        text-align: center;
+    }
+    .welcomeIcon{
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .nav-link {
+        margin-left: 0;
+        text-align: center;
+    }
+    .sidebar a {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .footerPart {
+        position: relative;
+    }
+}
+@media (max-width: 575px) {
+    .schedule-table th, .schedule-table td {
+        padding: 6px;
+        font-size: 10px;
+    }
+    .sidebar h2 {
+        font-size: 16px;
+    }
+    .nav_image{
+        width: 120px;
+    }
+    .schedule-container h2 {
+        font-size: 18px;
+    }
+}
